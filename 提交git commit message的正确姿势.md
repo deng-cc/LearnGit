@@ -110,19 +110,20 @@ $ git log <last tag> HEAD --pretty=format:%s
 ``` stylus
 $ git log <last release> HEAD --grep feat
 ```
-<br>
+
 <img src="https://github.com/deng-cc/LearnGit/raw/master/pics/git grep.png" width="500"  /><br>
 
 当然，你还可以这样：<br>
 <img src="https://github.com/deng-cc/LearnGit/raw/master/pics/git format grep.png" width="500"  /><br>
 
+<br>
 关于更多过滤规则，参考以下：
 - [5.3 Git log高级用法 过滤提交历史][4]
 <br>
 
 e.g.<br>
 
-<img src="https://github.com/deng-cc/LearnGit/raw/master/pics/git filter.png" width="650"  /><br>
+<img src="https://github.com/deng-cc/LearnGit/raw/master/pics/git filter.png" width="700"  /><br>
 
 <img src="https://github.com/deng-cc/LearnGit/raw/master/pics/git ignoreCase.png" width="500"  /><br>
 
