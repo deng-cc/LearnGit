@@ -9,6 +9,7 @@
 BookStore项目实际上跟这个备注并没有关系，而是PictureFriend才主要是这次commit的内容，只是因为我将两个项目的操作在同一次commit中进行提交，造成了这样的情况。可见如果是正式的项目，如此的提交是多么混乱，他人将难以维护和修改。<br>
 
 究其原因，主要还是在正确的git提交姿势上知之甚少：
+
 1. 不同的要分别分次提交，（这里不同指 如：不同的修改类型//优化还是新增etc.//，不同的模块，不同的功能等）；
 2. 提交的信息要进行一定程度的格式化。
 
@@ -23,12 +24,13 @@ commit的写法规范有很多，以下参考网络相关文章，并进行简�
 
 ## 2.1 Commit message的格式化
 每次提交，Commit message 都包括两个核心部分：**标题** 和 **内容**。
+
 ``` stylus
 <类型>: <主题>
 // 空一行
 <内容>
 ```
-<br>
+
 其中，**标题 是必需的**，内容无需过多描述的话，正文内容部分可以省略。<br>
 
 不管是哪一个部分，任何一行都不得超过72个字符（或100个字符）。这是为了避免自动换行影响美观。<br>
@@ -77,14 +79,16 @@ it's useless acturally.
 内容部分是对本次 commit 的详细描述，可以分成多行，正文在 72 个字符处换行。<br>
 
 使用正文解释是什么和为什么，而不是如何做，以及与以前行为的对比。
+<br>
+<br>
 
 ---
 
 ## 2.2 格式化后Commit message的好处
 ### 2.2.1 提供更多的历史信息，方便快速浏览
 
-直接使用git log你得到的是：
-<img src="https://github.com/deng-cc/LearnGit/raw/master/pics/git log.png" width="400"  /><br>
+直接使用git log你得到的是：<br>
+<img src="https://github.com/deng-cc/LearnGit/raw/master/pics/git log.png" width="500"  /><br>
 
 比如，下面的命令显示上次发布后的变动，每个commit占据一行。你只看行首，就知道某次 commit 的目的。
 
@@ -92,10 +96,11 @@ it's useless acturally.
 $ git log <last tag> HEAD --pretty=format:%s
 ```
 
-<img src="https://github.com/deng-cc/LearnGit/raw/master/pics/git format.png" width="400"  /><br>
+<img src="https://github.com/deng-cc/LearnGit/raw/master/pics/git format.png" width="500"  /><br>
 
 关于更多git log的输出格式，参考以下：
 - [个性化你的 Git Log 的输出格式][3] 
+<br>
 <br>
 
 ### 2.2.2 可以过滤某些commit（比如文档改动），便于快速查找信息
@@ -106,19 +111,20 @@ $ git log <last tag> HEAD --pretty=format:%s
 $ git log <last release> HEAD --grep feat
 ```
 <br>
-<img src="https://github.com/deng-cc/LearnGit/raw/master/pics/git grep.png" width="400"  /><br>
+<img src="https://github.com/deng-cc/LearnGit/raw/master/pics/git grep.png" width="500"  /><br>
 
 当然，你还可以这样：<br>
-<img src="https://github.com/deng-cc/LearnGit/raw/master/pics/git format grep.png" width="400"  /><br>
+<img src="https://github.com/deng-cc/LearnGit/raw/master/pics/git format grep.png" width="500"  /><br>
 
 关于更多过滤规则，参考以下：
 - [5.3 Git log高级用法 过滤提交历史][4]
 <br>
 
-e.g.
-<img src="https://github.com/deng-cc/LearnGit/raw/master/pics/git filter.png" width="400"  /><br>
+e.g.<br>
 
-<img src="https://github.com/deng-cc/LearnGit/raw/master/pics/git ignoreCase.png" width="400"  /><br>
+<img src="https://github.com/deng-cc/LearnGit/raw/master/pics/git filter.png" width="650"  /><br>
+
+<img src="https://github.com/deng-cc/LearnGit/raw/master/pics/git ignoreCase.png" width="500"  /><br>
 
 
   [1]: http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html
