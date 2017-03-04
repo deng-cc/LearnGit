@@ -57,7 +57,7 @@ it's useless acturally.
 #### 2.1.1.1 类型
 类型 用于说明 commit 的类别，只允许使用下面7个标识。
 
-- init：初始化（用于项目初始化或其他某种行为的开始描述，不影响代码）
+- init：项目初始化（对项目情况进行描述）
 - feat：新功能（feature）
 - fix：修补bug
 - docs：文档（documentation）
